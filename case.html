@@ -1,0 +1,321 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="zh-tw">
+<head>
+<meta name="Generator" content="EditPlus" />
+<meta name="Author" content="FT" />
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<title>兆豐文創 Harvest Education</title>
+<style type="text/css">
+
+<!--
+a { text-decoration: none } 
+a:link {color: #FFF}
+a:visited {color:#FFF}
+a:active {color:#ffffff}
+a:hover {color: #FC9
+}
+a:hover img{
+ opacity: 0.55;
+ filter:alpha(opacity=55); /* IE only */}
+-->
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-image: url();
+}
+
+	#menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	float: left;
+	background: #fff;
+	font-family: Helvetica,Microsoft JhengHei,Apple LiGothic, Arial, sans-serif;
+	font-size:10.5pt;
+	}
+	#menu li {
+		margin: 0px;
+		padding: 0px;
+		float: left;
+		border-right: 0px solid #999;
+	}
+	#menu li a {
+		padding: 3px 10px;
+		display: block;
+		color: #000;
+		text-decoration: none;
+	}
+	#menu li ul {
+		margin: 0;
+		padding: 6px 20px;
+		list-style: none;
+		float: left;
+		position: absolute;
+		line-height:22px;
+		left: 0;
+		width: 600px;
+		color: #fff;
+		background: # ;
+		display: none;
+	}
+	#menu li ul li { border: 1px solid #fff; }
+	#menu li ul li a { display: inline; }
+	#menu li ul li a:hover { color:#eb6123; }
+	#menu li a:hover { color:#45aeaa; }
+	
+.brown {
+	text-align: left;
+	font-size:9pt;
+	color:#FFF;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height:10pt;
+}
+.button {	font-size:11pt; color:#332e2e; #; font-family: Helvetica, sans-serif; line-height:12pt; letter-spacing:1pt;
+}
+.info {
+	font-size:10pt;
+	color:#666;
+#; 	font-family:Helvetica, Microsoft JhengHei, Apple LiGothic, Arial, sans-serif;
+	line-height:12pt;
+	letter-spacing:1px;
+	text-align: center; 
+}
+.info2 {
+	font-size:5pt;
+	color:#666;
+#; 	font-family:Helvetica, Microsoft JhengHei, Apple LiGothic, Arial, sans-serif;
+	line-height:12pt;
+	letter-spacing:1px;
+	text-align: right; 
+}
+.more {	font-style:oblique ;font-size:10pt; font-family: Georgia, "Times New Roman", Times, serif; line-height:18pt; color:#464141; font-weight:500; letter-spacing:1pt;
+}
+.info1 {font-size:10pt; color:#333; #; font-family:Helvetica, Microsoft JhengHei, Apple LiGothic, Arial, sans-serif; line-height:12pt; letter-spacing:1px;
+}
+.chtitle {
+	font-size:15px;
+	color: #008B8B;
+	font-family:Helvetica, Microsoft JhengHei, Apple LiGothic, Arial,  sans-serif;
+	letter-spacing:1px;
+	font-style: normal;
+}
+.title {	font-size:25px;
+	color: #CCC;
+#; 	font-family:Georgia, "Times New Roman", Times, serif;
+	letter-spacing:1px;
+	font-style: italic;
+}
+.title {
+	color: #DC143C;
+}
+.title .title {
+	color: #008B8B;
+}
+</style>
+<script type="text/javascript">
+$(function(){
+		// 幫 #menu li 加上 hover 事件
+		$('#menu>li').hover(function(){
+			// 先找到 li 中的子選單
+			var _this = $(this),
+				_subnav = _this.children('ul');
+			
+			// 變更目前母選項的背景顏色
+			// 同時淡入子選單(如果有的話)
+			_this.css('backgroundColor', '#');
+			_subnav.stop(true, true).fadeIn(400);
+		} , function(){
+			// 變更目前母選項的背景顏色
+			// 同時淡出子選單(如果有的話)
+			// 也可以把整句拆成上面的寫法
+			$(this).css('backgroundColor', '').children('ul').stop(true, true).fadeOut(400);
+		});
+		
+		// 取消超連結的虛線框
+		$('a').focus(function(){
+			this.blur();
+		});
+	});
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<link rel="shortcut icon" href="icon/favicon.ico" >
+<link rel="Bookmark" href="icon/favicon.ico" type="image/x-icon" />
+</head>
+
+<body onLoad="MM_preloadImages('icon/home2.png','icon/login2.png')">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="100%" height="30" align="right" valign="middle" bgcolor="#EA5A2C" ><table border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="center" valign="middle"><span class="brown"><a href="file:///Macintosh HD/Users/macintosh/Desktop/Harvest Education 2/home2.html"></a><a href="index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','icon/home2.png',1)"><img src="icon/home.png" alt="" name="Image13" height="11" border="0"></a>　<a href="http://alchemytechnology.no-ip.org:4050/BrainwaveClass/index/login.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','icon/login2.png',1)"><img src="icon/login.png" alt="" name="Image12" width="58" height="11" border="0"></a></span></td>
+        <td width="10">&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<table width="950" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+	    <td width="950"><table width="950" border="0" cellpadding="0" cellspacing="0">
+	      <tr>
+	        <td height="30">&nbsp;</td>
+	        <td>&nbsp;</td>
+          </tr>
+	      <tr>
+	        <td valign="middle"><a href="index.html"><img src="img/home/Logo-large.png" alt="" height="65" border="0" /></a></td>
+	        <td><table border="0" align="right" cellpadding="0" cellspacing="0">
+	          <tr>
+	            <td width="" height="15" valign="top"><ul id="menu">
+	              <li> <a href="#">最新資訊</a>
+	                <ul>
+	                  <li><a href="#">最新活動</a></li>
+	                  <li><a href="https://www.facebook.com/HarvestEDU" target="_new">最新趨勢</a></li>
+	                  </ul>
+	                <li><a href="#">關於我們</a>
+	                  <ul>
+	                    <li><a href="about.html">關於兆豐</a></li>
+	                    <li><a href="news/news.html">媒體報導</a></li>
+						<li><a href="#">活動照片</a></li>                    
+                      </ul>
+					</li>
+                    <li><a href="#">腦波教育</a>
+	                    <ul>
+	                      <li><a href="21_classroom.html">21天腦波雲端教室</a></li>
+	                      <li><a href="music.html">音樂療癒課程</a></li>
+	                      <li><a href="zenlamp.html">Zen Lamp 智慧生活放鬆燈</a></li>
+	                      <li><a href="braincube.html">BrainCubed 專精學習設計平台</a></li>
+						  <li><a href="pad_classroom.html">Pad 腦波學習系統</a></li>
+						  <li><a href="certificate.html">腦波教師證照</a></li>
+                      </ul>
+                    </li>
+					<li><a href="case.html">成功案例</a>
+	                  <ul>                  
+                      </ul>
+	              <li><a href="#">合作夥伴</a>
+				   <ul>
+	                      <li><a href="cooperation.html">院校產學合作</a></li>
+						   <li><a href="#">教育身心靈研習</a></li>
+                      </ul></li>
+	              <li><a href="download.html">軟體下載</a></li>
+	              <li><a href="#">加入我們</a>
+				   <ul>
+						  <li><a href="contact.html">聯絡我們</a></li>
+	                      <li><a href="recruited.html">誠聘英才</a></li>
+	                      <li><a href="#">問與答</a></li>	     
+                      </ul></li>
+                </ul></td>
+              </tr>
+            </table></td>
+          </tr>
+	      </table></td>
+  </tr>
+	  <tr>
+	    
+      </tr>
+	  <tr>
+	    <td><p>&nbsp;</p>
+        <p>&nbsp;</p></td>
+      </tr>
+</table>
+<table width="950" border="0" align="center" cellpadding="0" cellspacing="0">
+ <tr>
+    <td class="title"><span class="title">Our Story </span><span class="chtitle">小可的故事</span></td>
+    <td>&nbsp;</td>
+    <td rowspan="3"><img src="img/case/1359168464.jpg" alt="" width="400" border="0" align="right" /></td>
+  </tr>
+  
+  <tr>
+    <td width="500"><p><span class="info1">
+		當你面對一件很艱難的任務，但在別人眼裡，那只是一塊小蛋糕，你會放棄？還是不服輸？<br><br>		這是兆豐的孩子－小可，從大班被診斷出有「注意力不足過動症（ADD）」之後，每天在生活中上演的戲碼。在學校裡，老師要小可背一小段課文，對其他同學來說，只要五分鐘便滾瓜爛熟；但對小可來說，就算花上一個小時斷斷續續地背出了課文，下一分鐘隨即忘了自己背了什麼。<br><br>
+		對老師和爸媽來說，小可是個小麻煩：上課不專心、不喜歡寫功課、喜歡插嘴，還容易與同學發生衝突。<br><br>		但是對我們來說，小可是我們的資優生。在團體遊戲的時候，小可是個點子很多的孩子，提出的主意充滿了創意；在操作遊戲的時候，小可的放鬆和專注總是高於我們設定的標準，即使維持時間不長。<br><br>		對小可來說，他的世界其實很簡單。他喜歡科學，喜歡動手實驗和操作，喜歡讓每個人都知道自己的想法；他討厭背書，討厭一成不變和繁複的規則和背誦，默背總是不及格，聽寫卻能考高分。</span><br><br>
+    </p></td>
+    <td>&nbsp;</td>
+  </tr>
+   <tr>
+    <td>&nbsp;</td>
+   
+  </tr>
+	 <tr><td rowspan="3">
+	 <img src="img/case/create-a-homework-haven_400.jpg" alt="" width="400" height="300" border="0" align="absmiddle"/></td>
+     <td>&nbsp;</td>
+	<td class="title"><span class="title">Never Give Up </span><span class="chtitle">努力奮鬥，永不放棄</span></td>
+	</tr>
+	 
+  <tr>
+	<td>&nbsp;</td>
+	 <td width="500"><p><span class="info1">	小可對於自己有興趣的事物，能夠長時間投入卻不疲累。透過我們的了解與帶領，我們讓小可自己去發現，如何將不喜歡的事物變得喜歡。也和爸媽討論，如何讓小可快樂的學習成長。<br><br>	到現在，小可已經能背出長干行，雖然要花上比其他人三倍的時間和心力，但小可他知道他不能放棄，一旦自己放棄了自己，就沒有人能拯救自己了。
+	</span><br><br>
+    </p></td>
+	</tr>
+	<tr>
+    <td>&nbsp;</td>
+	<td>&nbsp;</td>
+	</tr>
+	<tr>
+    <td>&nbsp;</td>
+	<td>&nbsp;</td>
+	</tr>
+	<tr>
+    <td class="title"><span class="title">Our Vision </span><span class="chtitle">願景與期許</span></td>
+    <td>&nbsp;</td>
+    <td rowspan="3"><img src="img/case/laughing-children1.jpg" alt="" width="400" height="400" border="0" align="right" HSPACE="30"/></td>
+  </tr>
+   
+  <tr>
+    <td width="500"><p><span class="info1">
+		當孩子過得越來越不開心，我們要去思考，這是否是大人和社會的問題？<br><br>
+		我們的宗旨是讓每個孩子綻放最可愛的笑容。<br><br>
+		我們的願景是讓每個孩子都能找到自己專屬的快樂，得到更好的生活。<br><br>
+		我們的期許是讓每個孩子，不只特殊的孩子，都能在「學習」這方面得到更多樂趣，讓學習不再只是升學壓力，而是每個燦爛未來的踏腳石。
+	</span><br><br>
+	<span class="info2">圖片轉貼自：揚愛網《淺談注意力不足過動症2013/01/26》</span>
+	<br><br>
+	<br><br>
+	<span class="title" align="center">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; What' s Your Story ?</span>
+    </p></td>
+    <td>&nbsp;</td>
+  </tr>
+	<tr>
+    <td colspan="3"></td>
+  </tr>
+  <tr>
+    <td height="60" colspan="3" align="center" valign="middle">&nbsp;</td>
+  </tr>
+    <tr>
+    <td colspan="3" align="center" valign="middle"><span class="info">兆豐文創有限公司               / 404   台中市北區 博館路89號6樓之2                     / tel. 04-23292926                   / fax. 04-23922875 </td></tr>
+  <tr>
+  <td colspan="3" align="center" valign="middle"><a href="https://www.facebook.com/HarvestEDU" target="_new"><span class="info">FB：『腦波教室』https://www.facebook.com/HarvestEDU</span></a></td>
+  </tr>
+  <tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>
