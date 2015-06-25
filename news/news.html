@@ -1,0 +1,541 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="zh-tw">
+<head>
+<meta name="Generator" content="EditPlus" />
+<meta name="Author" content="FT" />
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<title>兆豐文創 Alchem Alchemy Creation</title>
+
+<style type="text/css">
+
+<!--
+a { text-decoration: none } 
+a:link {color: #333}
+a:visited {color:#333}
+a:active {color:#333}
+a:hover {color: #999
+}
+-->
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-image: url();
+}
+
+	#menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	float: left;
+	background: #fff;
+	font-family: Helvetica,Microsoft JhengHei,Apple LiGothic, Arial, sans-serif;
+	font-size:10.5pt;
+	}
+	#menu li {
+		margin: 0px;
+		padding: 0px;
+		float: left;
+		border-right: 0px solid #999;
+	}
+	#menu li a {
+		padding: 3px 10px;
+		display: block;
+		color: #000;
+		text-decoration: none;
+	}
+	#menu li ul {
+		margin: 0;
+		padding: 6px 20px;
+		list-style: none;
+		float: left;
+		position: absolute;
+		line-height:22px;
+		left: 0;
+		width: 600px;
+		color: #fff;
+		background: # ;
+		display: none;
+	}
+	#menu li ul li { border: 1px solid #fff; }
+	#menu li ul li a { display: inline; }
+	#menu li ul li a:hover { color:#eb6123; }
+	#menu li a:hover { color:#45aeaa; }
+	
+.brown {
+	text-align: left;
+	font-size:9pt;
+	color:#FFF;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height:10pt;
+}
+.button {	font-size:11pt; color:#332e2e; #; font-family: Helvetica, sans-serif; line-height:12pt; letter-spacing:1pt;
+}
+.info {	
+font-size:10pt; color:#666; #; font-family:Helvetica, Microsoft JhengHei, Apple LiGothic, Arial, sans-serif; line-height:12pt; letter-spacing:1px;
+ 
+}
+.more {	font-style:oblique ;font-size:10pt; font-family: Georgia, "Times New Roman", Times, serif; line-height:18pt; color:#464141; font-weight:500; letter-spacing:1pt;
+}
+
+.table {
+	font-size: 16px;
+	border:1px solid #CCC;
+<!–可進一步設定框線的顏色及式樣–>
+border-collapse: collapse;
+	width:215px;
+	padding: 8px 8px 8px 8px;
+	margin:0 auto;
+<!–表格居中–>
+; 	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.tag {	
+font-size:9pt; color:#999; #; font-family:Helvetica, Microsoft JhengHei, Apple LiGothic, Arial, sans-serif; line-height:12pt; letter-spacing:1px;
+}
+
+
+.newstitle {
+	
+	margin:0 auto;<!–表格居中–>	
+	font-size:13px; color: #333; #; font-family:Helvetica, Microsoft JhengHei, Apple LiGothic, Arial, sans-serif; line-height:15pt; letter-spacing:1px;
+	padding: 10px 5px 5px 5px;
+}
+
+.newinfo {
+	margin:0 auto;
+	height:150px;
+	font-size:12pt;
+	color:#333;
+	font-family:Helvetica, Microsoft JhengHei, Apple LiGothic, Arial, sans-serif;
+	line-height:14pt;
+	letter-spacing:1px;
+	padding: 6px 5px 0px 5px;
+	font-size: 13px;
+	text-align: justify;
+}
+
+</style>
+<script type="text/javascript">
+$(function(){
+		// 幫 #menu li 加上 hover 事件
+		$('#menu>li').hover(function(){
+			// 先找到 li 中的子選單
+			var _this = $(this),
+				_subnav = _this.children('ul');
+			
+			// 變更目前母選項的背景顏色
+			// 同時淡入子選單(如果有的話)
+			_this.css('backgroundColor', '#');
+			_subnav.stop(true, true).fadeIn(400);
+		} , function(){
+			// 變更目前母選項的背景顏色
+			// 同時淡出子選單(如果有的話)
+			// 也可以把整句拆成上面的寫法
+			$(this).css('backgroundColor', '').children('ul').stop(true, true).fadeOut(400);
+		});
+		
+		// 取消超連結的虛線框
+		$('a').focus(function(){
+			this.blur();
+		});
+	});
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<link rel="shortcut icon" href="icon/favicon.ico" >
+<link rel="Bookmark" href="icon/favicon.ico" type="image/x-icon" />
+</style>
+<style type="text/css">
+.newinfo1 {	margin:0 auto;
+	height:150px;
+	font-size:12pt;
+	color:#333;
+	font-family:Helvetica, Microsoft JhengHei, Apple LiGothic, Arial, sans-serif;
+	line-height:14pt;
+	letter-spacing:1px;
+	padding: 6px 5px 0px 5px;
+	font-size: 13px;
+	text-align: justify;
+}
+.newinfo2 {	margin:0 auto;
+	height:150px;
+	font-size:12pt;
+	color:#333;
+	font-family:Helvetica, Microsoft JhengHei, Apple LiGothic, Arial, sans-serif;
+	line-height:14pt;
+	letter-spacing:1px;
+	padding: 6px 5px 0px 5px;
+	font-size: 13px;
+	text-align: justify;
+}
+.newinfo3 {	margin:0 auto;
+	height:150px;
+	font-size:12pt;
+	color:#333;
+	font-family:Helvetica, Microsoft JhengHei, Apple LiGothic, Arial, sans-serif;
+	line-height:14pt;
+	letter-spacing:1px;
+	padding: 6px 5px 0px 5px;
+	font-size: 13px;
+	text-align: justify;
+}
+.newinfo4 {	margin:0 auto;
+	height:150px;
+	font-size:12pt;
+	color:#333;
+	font-family:Helvetica, Microsoft JhengHei, Apple LiGothic, Arial, sans-serif;
+	line-height:14pt;
+	letter-spacing:1px;
+	padding: 6px 5px 0px 5px;
+	font-size: 13px;
+	text-align: justify;
+}
+.newinfo5 {	margin:0 auto;
+	height:150px;
+	font-size:12pt;
+	color:#333;
+	font-family:Helvetica, Microsoft JhengHei, Apple LiGothic, Arial, sans-serif;
+	line-height:14pt;
+	letter-spacing:1px;
+	padding: 6px 5px 0px 5px;
+	font-size: 13px;
+	text-align: justify;
+}
+.newinfo6 {	margin:0 auto;
+	height:150px;
+	font-size:12pt;
+	color:#333;
+	font-family:Helvetica, Microsoft JhengHei, Apple LiGothic, Arial, sans-serif;
+	line-height:14pt;
+	letter-spacing:1px;
+	padding: 6px 5px 0px 5px;
+	font-size: 13px;
+	text-align: justify;
+}
+.newinfo7 {	margin:0 auto;
+	height:150px;
+	font-size:12pt;
+	color:#333;
+	font-family:Helvetica, Microsoft JhengHei, Apple LiGothic, Arial, sans-serif;
+	line-height:14pt;
+	letter-spacing:1px;
+	padding: 6px 5px 0px 5px;
+	font-size: 13px;
+	text-align: justify;
+}
+.newinfo8 {	margin:0 auto;
+	height:150px;
+	font-size:12pt;
+	color:#333;
+	font-family:Helvetica, Microsoft JhengHei, Apple LiGothic, Arial, sans-serif;
+	line-height:14pt;
+	letter-spacing:1px;
+	padding: 6px 5px 0px 5px;
+	font-size: 13px;
+	text-align: justify;
+}
+.newinfo9 {	margin:0 auto;
+	height:150px;
+	font-size:12pt;
+	color:#333;
+	font-family:Helvetica, Microsoft JhengHei, Apple LiGothic, Arial, sans-serif;
+	line-height:14pt;
+	letter-spacing:1px;
+	padding: 6px 5px 0px 5px;
+	font-size: 13px;
+	text-align: justify;
+}
+.newinfo10 {	margin:0 auto;
+	height:150px;
+	font-size:12pt;
+	color:#333;
+	font-family:Helvetica, Microsoft JhengHei, Apple LiGothic, Arial, sans-serif;
+	line-height:14pt;
+	letter-spacing:1px;
+	padding: 6px 5px 0px 5px;
+	font-size: 13px;
+	text-align: justify;
+}
+</style>
+</head>
+
+<body onLoad="MM_preloadImages('icon/home2.png','icon/login2.png')">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="100%" height="30" align="right" valign="middle" bgcolor="#EA5A2C" ><table border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td align="center" valign="middle"><span class="brown"><a href="file:///Macintosh HD/Users/macintosh/Desktop/Harvest Education 2/home2.html"></a><a href="http://www.harvesteducation.cc/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','icon/home2.png',1)"><img src="icon/home.png" alt="" name="Image13" height="11" border="0"></a>　<a href="http://alchemytechnology.no-ip.org:4050/BrainwaveClass/index/login.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','icon/login2.png',1)"><img src="icon/login.png" alt="" name="Image12" width="58" height="11" border="0"></a></span></td>
+        <td width="10">&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<table width="950" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+	    <td width="950" colspan="7"><table width="950" border="0" cellpadding="0" cellspacing="0">
+	      <tr>
+	        <td height="30">&nbsp;</td>
+	        <td>&nbsp;</td>
+          </tr>
+	      <tr>
+	        <td><a href="http://www.harvesteducation.cc/"><img src="img/home/Logo-large.png" alt="" height="65" border="0" /></a></td>
+	        <td><table border="0" align="right" cellpadding="0" cellspacing="0">
+	          <tr>
+	            <td width="" height="15" valign="top"><ul id="menu">
+	              <li> <a href="#">最新資訊</a>
+	                <ul>
+	                  <li><a href="#">最新活動</a></li>
+	                  <li><a href="https://www.facebook.com/HarvestEDU" target="_new">最新趨勢</a></li>
+	                  </ul>
+	                <li><a href="#">關於我們</a>
+	                  <ul>
+	                    <li><a href="http://harvesteducation.cc/about.html">關於兆豐</a></li>
+	                    <li><a href="news/news.html">媒體報導</a></li>
+						<li><a href="#">活動照片</a></li>                    
+                      </ul>
+					</li>
+                    <li><a href="#">腦波教育</a>
+	                    <ul>
+	                      <li><a href="http://harvesteducation.cc/21_classroom.html">21天腦波雲端教室</a></li>
+	                      <li><a href="http://harvesteducation.cc/music.html">音樂療癒課程</a></li>
+	                      <li><a href="http://harvesteducation.cc/zenlamp.html">Zen Lamp 智慧生活放鬆燈</a></li>
+	                      <li><a href="http://harvesteducation.cc/braincube.html">BrainCubed 專精學習設計平台</a></li>
+						  <li><a href="http://harvesteducation.cc/pad_classroom.html">Pad 腦波學習系統</a></li>
+						  <li><a href="http://harvesteducation.cc/certificate.html">腦波教師證照</a></li>
+                      </ul>
+                    </li>
+					<li><a href="http://harvesteducation.cc/case.html">成功案例</a>
+	                  <ul>                  
+                      </ul>
+	              <li><a href="#">合作夥伴</a>
+				   <ul>
+	                      <li><a href="http://harvesteducation.cc/cooperation.html">院校產學合作</a></li>
+						   <li><a href="#">教育身心靈研習</a></li>
+                      </ul></li>
+	              <li><a href="http://harvesteducation.cc/download.html">軟體下載</a></li>
+	              <li><a href="#">加入我們</a>
+				   <ul>
+						  <li><a href="http://harvesteducation.cc/contact.html">聯絡我們</a></li>
+	                      <li><a href="http://harvesteducation.cc/recruited.html">誠聘英才</a></li>
+	                      <li><a href="#">問與答</a></li>	     
+                      </ul></li>
+                </ul></td>
+              </tr>
+            </table></td>
+          </tr>
+	      </table></td>
+  </tr>
+	  <tr>
+	    <td height="40" colspan="7">&nbsp;</td>
+      </tr>
+	  <tr>
+	    <td height="30" class="table"><table border="0" align="center" cellpadding="0" cellspacing="0">
+	      <tr>
+	        <td height="120" colspan="2"><img src="img/news/news08.jpg" alt="" width="205" height="120"></td>
+          </tr>
+	      <tr>
+	        <td colspan="2" valign="bottom" class="newstitle"><a href="news-9.html">教育資訊展 <br>
+	          樹林國小登場</a></td>
+          </tr>
+	      <tr>
+          </tr>
+	      <tr>
+	        <td colspan="2" valign="top" class="newinfo">教育資訊展十五日在七股區樹林國小登場，吸引全國各校的資訊人員參加，其中有協助老師檢測專注力不足的軟體，另有超大型的多點觸控螢幕，學生僅在螢幕就能解剖青蛙，增加學習興趣。...<br>
+                <br>
+                <br>
+                <br>
+	        </td>
+          </tr>
+	      <tr>
+	        <td width="190" height="25" align="right" valign="bottom" class="button"><span class="tag">腦波教室</span></td>
+	        <td width="25" align="right" valign="bottom" class="button"><img src="img/news/tag-01.png" alt="" width="20" height="15"></td>
+          </tr>
+        </table></td>
+	    <td width="30">&nbsp;</td>
+	    <td class="table"><table border="0" align="center" cellpadding="0" cellspacing="0">
+	      <tr>
+	        <td height="120" colspan="2"><img src="img/news/news03.jpg" alt="" width="205" height="120"></td>
+          </tr>
+	      <tr>
+	        <td colspan="2" valign="bottom" class="newstitle"><a href="news-4.html">頭戴感應器 <br>
+	          用腦波「寫」書法</a></td>
+          </tr>
+	      <tr></tr>
+	      <tr>
+	        <td colspan="2" valign="top" class="newinfo">不用揮毫，透過腦波感應器一樣可以寫書法？桃園國際動漫大展請來科技產業界助陣，「大寶腦波」展示區相當吸引人，只要掛上類似頭戴式耳機設備的感應器，當腦波「心平氣和」時就可以看見眼前的螢幕出現書法字體...<br>
+            <br>
+            <br></td>
+          </tr>
+	      <tr>
+	        <td width="190" height="25" align="right" valign="bottom" class="button"><span class="tag">腦波, 教室</span></td>
+	        <td width="25" align="right" valign="bottom" class="button"><img src="img/news/tag-01.png" alt="" width="20" height="15"></td>
+          </tr>
+        </table></td>
+	    <td width="30" colspan="top">&nbsp;</td>
+	     <td class="table"><table border="0" align="center" cellpadding="0" cellspacing="0">
+	       <tr>
+	         <td height="120" colspan="2"><img src="img/news/news04.jpg" alt="" width="205" height="120"></td>
+           </tr>
+	       <tr>
+	         <td colspan="2" valign="bottom" class="newstitle"><a href="news-5.html">桃園動漫展 <br>
+	           腦波看穿專注力</a></td>
+           </tr>
+	      <tr></tr>
+	      <tr>
+	        <td colspan="2" valign="top" class="newinfo">2013桃園動漫遊樂園在本日於展演中心拉開序幕。展場其中一個區位「大寶腦波」與民眾近距離互動，體驗者在練習書法的活動中，藉由專注力字體才能完整寫完。「大寶腦波」讓體驗者戴上黑色頭盔，即可偵測到民眾的專注力...<br>
+            <br><br></td>
+          </tr>
+	      <tr>
+	        <td width="190" height="25" align="right" valign="bottom" class="button"><span class="tag">腦波教室</span></td>
+	        <td width="25" align="right" valign="bottom" class="button"><img src="img/news/tag-01.png" alt="" width="20" height="15"></td>
+          </tr>
+        </table></td>
+	    <td width="30" valign="top">&nbsp;</td>
+	     <td class="table"><table border="0" align="center" cellpadding="0" cellspacing="0">
+	       <tr>
+	         <td height="120" colspan="2"><img src="img/news/news07.jpg" alt="" width="205" height="120"></td>
+           </tr>
+	       <tr>
+	         <td colspan="2" valign="bottom" class="newstitle"><a href="news-8.html">穿戴科技蒐奇！ 電子紙手錶、腦波直升機吸睛</a></td>
+           </tr>
+	       <tr></tr>
+	      <tr>
+	        <td colspan="2" valign="top" class="newinfo">繼谷歌眼鏡和傳聞中的iwatch之後，今年台北國際電腦Computex掀起一股穿戴科技熱。像是有廠商就推出目前螢幕最大的電子紙智慧型手錶，不僅可以藍芽連結手機讀取訊息、上臉書，還號稱使用七天不充電...<br>
+	          <br>	          
+            <br></td>
+          </tr>
+	      <tr>
+	        <td width="190" height="25" align="right" valign="bottom" class="button"><span class="tag">腦波教室</span></td>
+	        <td width="25" align="right" valign="bottom" class="button"><img src="img/news/tag-01.png" alt="" width="20" height="15"></td>
+          </tr>
+        </table></td>
+  </tr>
+	  <tr>
+	    <td height="30" colspan="7">&nbsp;</td>
+  </tr>
+	  <tr>
+	     <td class="table"><table border="0" align="center" cellpadding="0" cellspacing="0">
+	       <tr>
+	         <td height="120" colspan="2"><img src="img/news/news06.jpg" alt="" width="205" height="120"></td>
+           </tr>
+	       <tr>
+	         <td colspan="2" valign="bottom" class="newstitle"><a href="news-7.html"><font size="3">2013 Computex BC AWARD 引領智慧新生活</font></a></td>
+           </tr>
+	      <tr></tr>
+	      <tr>
+	        <td colspan="2" valign="top" class="newinfo">每年Computex除了有各大廠的新品令人期待以外，其實還有一個Best Choice Award(簡稱BC Award)引人注目。原來BC Award 是針對智慧生活應用相關產品所進行的評選活動，因此在BC Award中，我們也能看到不少融入現在生活的科技...<br>
+	          <br>
+            <br></td>
+          </tr>
+	      <tr>
+	        <td width="190" height="25" align="right" valign="bottom" class="button"><span class="tag">腦波教室</span></td>
+	        <td width="25" align="right" valign="bottom" class="button"><img src="img/news/tag-01.png" alt="" width="20" height="15"></td>
+          </tr>
+        </table></td>
+	    <td>&nbsp;</td>
+	<td class="table"><table border="0" align="center" cellpadding="0" cellspacing="0">
+	      <tr>
+	        <td height="120" colspan="2"><img src="img/news/news05.jpg" alt="" width="205" height="120"></td>
+        </tr>
+	      <tr>
+	        <td colspan="2" valign="bottom" class="newstitle"><a href="news-6.html">顏色反應大腦狀態 大寶科技揭開人的情緒秘密</a></td>
+        </tr>
+	      <tr></tr>
+	      <tr>
+	        <td colspan="2" valign="top" class="newinfo">人類的大腦充滿迷團，但現在你不需成為頂尖科學家，也能輕易掌握每個人的大腦。由大寶科技公司所設計的腦波觀想儀，透過簡單的顏色光譜反應大腦狀態，搭配不同的應用模式，讓人類大腦的秘密完全攤在陽光下 ...<br>
+	        </span><br>	        <br></td>
+          </tr>
+	      <tr>
+	        <td width="190" height="25" align="right" valign="bottom" class="button"><span class="tag">腦波教室</span></td>
+	        <td width="25" align="right" valign="bottom" class="button"><img src="img/news/tag-01.png" alt="" width="20" height="15"></td>
+          </tr>
+        </table></td>
+	    <td>&nbsp;</td>
+	 <td class="table"><table border="0" align="center" cellpadding="0" cellspacing="0">
+	      <tr>
+	        <td height="120" colspan="2"><img src="img/news/news02.jpg" alt="" width="205" height="120"></a></td>
+        </tr>
+	      <tr>
+	        <td colspan="2" valign="bottom" class="newstitle"><a href="news-3.html">用意念種花 大寶帶領走進腦波的奇妙世界</a></td>
+        </tr>
+	      <tr></tr>
+	      <tr>
+	        <td colspan="2" valign="top" class="newinfo">大寶科技日前在台中創意文化園區展出一款用腦波控制的專注花園教學軟體，使用者透過簡易的腦波耳機，即可用專注或放鬆的程度來澆水、施肥，用意念種花。大寶科技參與經濟部中小企業處主辦的「創業領航，拼亮台灣....<br>	          
+            <br><br></td>
+          </tr>
+	      <tr>
+	        <td width="190" height="25" align="right" valign="bottom" class="button"><span class="tag">腦波教室</span></td>
+	        <td width="25" align="right" valign="bottom" class="button"><img src="img/news/tag-01.png" alt="" width="20" height="15"></td>
+          </tr>
+        </table></td>
+	    <td>&nbsp;</td>
+		 <td class="table"><table border="0" align="center" cellpadding="0" cellspacing="0">
+	       <tr>
+	         <td height="120" colspan="2"><img src="img/news/news01.jpg" alt="" width="205" height="120"></td>
+           </tr>
+	       <tr>
+	         <td colspan="2" valign="bottom" class="newstitle"><a href="news-2.html">尋找專心的音符 勤益科大同步腦波實驗室有答案</a></td>
+           </tr>
+	      <tr></tr>
+	      <tr>
+	        <td colspan="2" valign="top" class="newinfo">你是否記得在希臘神話中，以美妙的豎琴就能馴服野獸的奧菲斯？到底是什麼樣的音樂，才能使人放鬆或專心呢？勤益科技大學的鄭志敏教授在該校的同步腦波評測實驗室中，進行了一系列以音樂增進孩童專注力為主題的實驗。...<br>
+	          <br>
+	          <br></td>
+          </tr>
+	      <tr>
+	        <td width="190" height="25" align="right" valign="bottom" class="button"><span class="tag">腦波教室</span></td>
+	        <td width="25" align="right" valign="bottom" class="button"><img src="img/news/tag-01.png" alt="" width="20" height="15"></td>
+          </tr>
+        </table></td>
+  </tr>
+	  <tr>
+	    <td height="30" colspan="7">&nbsp;</td>
+  </tr>
+	  <tr>
+	  <!--  <td height="30" colspan="6" class="more"><a href="#">Newer Posts <<<</a></td>
+	    <td height="30" align="right" class="more"><a href="#">>>> Older Posts</a></td> -->
+      </tr>
+	  <tr>
+	    <td colspan="7" align="center" class="info">&nbsp;</td>
+  </tr>
+	  <tr>
+	    <td colspan="7" align="center" class="info">兆豐文創有限公司               / 404   台中市北區 博館路89號6樓之2                     / tel. 04-23292926                   / fax. 04-23922875 </td>
+      </tr>
+	  <tr>
+	  <td colspan="7" align="center" class="info">
+	  <a href="https://www.facebook.com/HarvestEDU" target="_new"><font class="info">FB：『腦波教室』https://www.facebook.com/HarvestEDU</font></a>
+	  </td>
+	  </tr>
+	  <tr>
+	    <td colspan="7">&nbsp;</td>
+      </tr>
+</table>
+</body>
+</html>

@@ -9,8 +9,7 @@
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-<title>兆豐文創 Alchem Alchemy Creation</title>
-
+<title>兆豐文創 Harvest Education</title>
 <style type="text/css">
 
 <!--
@@ -21,7 +20,7 @@ a:active {color:#ffffff}
 a:hover {color: #FC9
 }
 a:hover img{
- opacity: 100;
+ opacity: 0.55;
  filter:alpha(opacity=55); /* IE only */}
 -->
 
@@ -81,11 +80,36 @@ body {
 }
 .button {	font-size:11pt; color:#332e2e; #; font-family: Helvetica, sans-serif; line-height:12pt; letter-spacing:1pt;
 }
-.info {	
-font-size:10pt; color:#666; #; font-family:Helvetica, Microsoft JhengHei, Apple LiGothic, Arial, sans-serif; line-height:12pt; letter-spacing:1px;
- 
+.info {
+	font-size:10pt;
+	color:#666;
+#; 	font-family:Helvetica, Microsoft JhengHei, Apple LiGothic, Arial, sans-serif;
+	line-height:12pt;
+	letter-spacing:1px;
+	text-align: center; 
 }
 .more {	font-style:oblique ;font-size:10pt; font-family: Georgia, "Times New Roman", Times, serif; line-height:18pt; color:#464141; font-weight:500; letter-spacing:1pt;
+}
+.info1 {font-size:10pt; color:#333; #; font-family:Helvetica, Microsoft JhengHei, Apple LiGothic, Arial, sans-serif; line-height:12pt; letter-spacing:1px;
+}
+.chtitle {
+	font-size:15px;
+	color: #005BB4;
+	font-family:Helvetica, Microsoft JhengHei, Apple LiGothic, Arial,  sans-serif;
+	letter-spacing:1px;
+	font-style: normal;
+}
+.title {	font-size:25px;
+	color: #CCC;
+#; 	font-family:Georgia, "Times New Roman", Times, serif;
+	letter-spacing:1px;
+	font-style: italic;
+}
+.title {
+	color: #036;
+}
+.title .title {
+	color: #005BB4;
 }
 </style>
 <script type="text/javascript">
@@ -141,7 +165,7 @@ function MM_swapImage() { //v3.0
 <body onLoad="MM_preloadImages('icon/home2.png','icon/login2.png')">
 <table width="100%" border="0" cellpadding="0" cellspacing="0">
   <tr>
-    <td width="100%" height="30" align="right" valign="middle" bgcolor="#EA5A2C" ><table border="0" cellspacing="0" cellpadding="0">
+    <td width="100%" height="30" align="right" valign="middle" bgcolor="#EA5A2C" ><table border="0" cellpadding="0" cellspacing="0">
       <tr>
         <td align="center" valign="middle"><span class="brown"><a href="file:///Macintosh HD/Users/macintosh/Desktop/Harvest Education 2/home2.html"></a><a href="index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','icon/home2.png',1)"><img src="icon/home.png" alt="" name="Image13" height="11" border="0"></a>　<a href="http://alchemytechnology.no-ip.org:4050/BrainwaveClass/index/login.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','icon/login2.png',1)"><img src="icon/login.png" alt="" name="Image12" width="58" height="11" border="0"></a></span></td>
         <td width="10">&nbsp;</td>
@@ -151,13 +175,13 @@ function MM_swapImage() { //v3.0
 </table>
 <table width="950" border="0" align="center" cellpadding="0" cellspacing="0">
 <tr>
-	    <td><table width="950" border="0" cellpadding="0" cellspacing="0">
+	    <td width="950"><table width="950" border="0" cellpadding="0" cellspacing="0">
 	      <tr>
 	        <td height="30">&nbsp;</td>
 	        <td>&nbsp;</td>
           </tr>
 	      <tr>
-	        <td><a href="index.html"><img src="img/home/Logo-large.png" alt="" height="65" border="0" /></a></td>
+	        <td valign="middle"><a href="index.html"><img src="img/home/Logo-large.png" alt="" height="65" border="0" /></a></td>
 	        <td><table border="0" align="right" cellpadding="0" cellspacing="0">
 	          <tr>
 	            <td width="" height="15" valign="top"><ul id="menu">
@@ -205,48 +229,69 @@ function MM_swapImage() { //v3.0
 	      </table></td>
   </tr>
 	  <tr>
-	    <td height="40">&nbsp;</td>
+	    
       </tr>
 	  <tr>
-	    <td width="950" height="350"><img src="img/home/maingraphic.jpg" width="950" height="350" border="1px"></td>
+	    <td><p>&nbsp;</p>
+        <p>&nbsp;</p></td>
       </tr>
-	  <tr>
-	    <td height="15">&nbsp;</td>
-      </tr>
-	  <tr>
-	    <td><table border="0" cellspacing="0" cellpadding="0">
-	      <tr align="center" class="more">
-	        <td align="left" valign="top">媒體報導</td>
-	        <td align="left" valign="top">&nbsp;</td>
-	        <td align="left" valign="top">最新活動</td>
-	        <td align="left" valign="top">&nbsp;</td>
-	        <td align="left" valign="top">活動照片</td>
-	        <td align="left" valign="top">&nbsp;</td>
-	        <td align="left" valign="top">相關知識</td>
-          </tr>
-	      <tr align="center">
-	        <td width="215" height="105" bgcolor=""><a href="http://www.harvesteducation.cc/news/news.html"><img src="img/news/news.jpg" width="215" height="105" border="0"></a></td>
-	        <td width="30" height="100">&nbsp;</td>
-	        <td width="200" height="100"><a href="seminar/musichealing.html" target="_new"><img src="img/home/events.jpg" width="215" height="105" border="0"></a></td>
-	        <td width="30" height="100">&nbsp;</td>
-	        <td width="200" height="100"><img src="img/home/education.jpg" width="215" height="105" border="0"></td>
-	        <td width="30" height="100">&nbsp;</td>
-	        <td width="200" height="100"><img src="img/home/service.jpg" width="215" height="105" border="0"></td>
-          </tr>
-	      </table></td>
-      </tr>
-	  <tr>
-	    <td height="30">&nbsp;</td>
-      </tr>
-	  <tr>
-	    <td align="center" class="info">兆豐文創有限公司               / 404   台中市北區 博館路89號6樓之2                     / tel. 04-23292926                   / fax. 04-23922875  </td>
-      </tr>
-	  <tr>
-	  <td align="center" class="info"><a href="https://www.facebook.com/HarvestEDU" target="_new"><span class="info">FB：『腦波教室』https://www.facebook.com/HarvestEDU</span></a></td>
-	  </tr>
-	  <tr>
-	  <td colspan="3">&nbsp;</td>
-      </tr>
+</table>
+<table width="950" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td class="title"><span class="title">Brainwave Zen Lamp</span> <span class="chtitle">生活智慧放鬆燈</span></td>
+    <td>&nbsp;</td>
+    <td rowspan="3"><img src="img/Brainwave Education/zenlamp/zenlamp.jpg" alt="" width="427" border="0" align="right" /></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="500"><p><span class="info1">你有多久沒有放鬆了呢？<br />
+      你的精神有真正的放鬆了嗎？<br />
+      真正的身心放鬆是動力的來源<br />
+      近年來人們生活越來越緊張，瑜伽、冥想等放鬆活動逐漸成為生活時尚。<br />
+      使用神念科技精準的腦波耳機，能將人體腦波訊號透過RF傳輸傳達至放鬆燈。<br />
+      放鬆燈會依據個人的放鬆程度而產生顏色變化，<br />
+      較緊張之顏色為紅色，而最放鬆的顏色為紫色。<br />
+      <br />
+      使用腦波放鬆燈可以讓人最直覺的觀察到自己的情緒狀態。<br />
+      <br />
+      以下有幾個幫助放鬆的技巧：<br />
+      (1)閉上眼、深呼吸<br />
+      (2)全力握緊拳頭30秒 再慢慢放鬆<br />
+      (3)聽讓人紓緩的音樂<br />
+      (4)適度的伸展四肢<br />
+      <br />
+      腦波放鬆燈是個讓人們更容易進行放鬆訓練的工具，<br />
+      每個人都可以藉由偵測腦波來訓練自己控制情緒的能力。<br />
+      看見你的情緒，好好的放輕鬆吧！這會帶給你的生活更多新的能量。</span><br />
+      <br />
+    </p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3"></td>
+  </tr>
+  <tr>
+    <td colspan="3"><img src="img/Brainwave Education/zenlamp/zenlamp_banner2.png" width="950" height="250" border="0" /></td>
+  </tr>
+  <tr>
+    <td height="60" colspan="3" align="center" valign="middle">&nbsp;</td>
+  </tr>
+    <tr>
+    <td colspan="3" align="center" valign="middle"><span class="info">兆豐文創有限公司               / 404   台中市北區 博館路89號6樓之2                     / tel. 04-23292926                   / fax. 04-23922875 </td></tr>
+  <tr>
+  <td colspan="3" align="center" valign="middle"><a href="https://www.facebook.com/HarvestEDU" target="_new"><span class="info">FB：『腦波教室』https://www.facebook.com/HarvestEDU</span></a></td>
+  </tr>
+  <tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
 </table>
 </body>
 </html>

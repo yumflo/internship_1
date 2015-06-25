@@ -1,0 +1,443 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="zh-tw">
+<head>
+<meta name="Generator" content="EditPlus" />
+<meta name="Author" content="FT" />
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<title>兆豐文創 Harvest Education</title>
+<style type="text/css">
+
+<!--
+a { text-decoration: none } 
+a:link {color: #FFF}
+a:visited {color:#FFF}
+a:active {color:#ffffff}
+a:hover {color: #FC9
+}
+a:hover img{
+ opacity: 0.55;
+ filter:alpha(opacity=55); /* IE only */}
+-->
+.sidebar1 {
+	float: left;
+	
+	background: #93A5C4;
+	padding-bottom: 10px;
+}
+.content {
+	padding: 10px 0;
+	width: 80%;
+	float: left;
+}
+body {
+
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-image: url();
+}
+
+	#menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	float: left;
+	background: #fff;
+	font-family: Helvetica,Microsoft JhengHei,Apple LiGothic, Arial, sans-serif;
+	font-size:10.5pt;
+	}
+	#menu li {
+		margin: 0px;
+		padding: 0px;
+		float: left;
+		border-right: 0px solid #999;
+	}
+	#menu li a {
+		padding: 3px 10px;
+		display: block;
+		color: #000;
+		text-decoration: none;
+	}
+	#menu li ul {
+		margin: 0;
+		padding: 6px 20px;
+		list-style: none;
+		float: left;
+		position: absolute;
+		line-height:22px;
+		left: 0;
+		width: 600px;
+		color: #fff;
+		background: # ;
+		display: none;
+	}
+	#menu li ul li { border: 1px solid #fff; }
+	#menu li ul li a { display: inline; }
+	#menu li ul li a:hover { color:#eb6123; }
+	#menu li a:hover { color:#45aeaa; }
+	
+.brown {
+	text-align: left;
+	font-size:9pt;
+	color:#FFF;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height:10pt;
+}
+.button {	font-size:11pt; color:#332e2e; #; font-family: Helvetica, sans-serif; line-height:12pt; letter-spacing:1pt;
+}
+.info {
+	font-size:10pt;
+	color:#666;
+#; 	font-family:Helvetica, Microsoft JhengHei, Apple LiGothic, Arial, sans-serif;
+	line-height:12pt;
+	letter-spacing:1px;
+	text-align: center; 
+}
+.info2 {
+	font-size:5pt;
+	color:#666;
+#; 	font-family:Helvetica, Microsoft JhengHei, Apple LiGothic, Arial, sans-serif;
+	line-height:12pt;
+	letter-spacing:1px;
+	text-align: right; 
+}
+.more {	font-style:oblique ;font-size:10pt; font-family: Georgia, "Times New Roman", Times, serif; line-height:18pt; color:#464141; font-weight:500; letter-spacing:1pt;
+}
+.info1 {font-size:10pt; color:#333; #; font-family:Helvetica, Microsoft JhengHei, Apple LiGothic, Arial, sans-serif; line-height:12pt; letter-spacing:1px;
+}
+.chtitle {
+	font-size:15px;
+	color: #008B8B;
+	font-family:Helvetica, Microsoft JhengHei, Apple LiGothic, Arial,  sans-serif;
+	letter-spacing:1px;
+	font-style: normal;
+}
+.title {	font-size:25px;
+	color: #CCC;
+#; 	font-family:Georgia, "Times New Roman", Times, serif;
+	letter-spacing:1px;
+	font-style: italic;
+}
+.title {
+	color: #DC143C;
+}
+.title .title {
+	color: #008B8B;
+}
+</style>
+<script type="text/javascript">
+$(function(){
+		// 幫 #menu li 加上 hover 事件
+		$('#menu>li').hover(function(){
+			// 先找到 li 中的子選單
+			var _this = $(this),
+				_subnav = _this.children('ul');
+			
+			// 變更目前母選項的背景顏色
+			// 同時淡入子選單(如果有的話)
+			_this.css('backgroundColor', '#');
+			_subnav.stop(true, true).fadeIn(400);
+		} , function(){
+			// 變更目前母選項的背景顏色
+			// 同時淡出子選單(如果有的話)
+			// 也可以把整句拆成上面的寫法
+			$(this).css('backgroundColor', '').children('ul').stop(true, true).fadeOut(400);
+		});
+		
+		// 取消超連結的虛線框
+		$('a').focus(function(){
+			this.blur();
+		});
+	});
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<link rel="shortcut icon" href="icon/favicon.ico" >
+<link rel="Bookmark" href="icon/favicon.ico" type="image/x-icon" />
+</head>
+
+<body onLoad="MM_preloadImages('icon/home2.png','icon/login2.png')">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="100%" height="30" align="right" valign="middle" bgcolor="#EA5A2C" ><table border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="center" valign="middle"><span class="brown"><a href="file:///Macintosh HD/Users/macintosh/Desktop/Harvest Education 2/home2.html"></a><a href="index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','icon/home2.png',1)"><img src="icon/home.png" alt="" name="Image13" height="11" border="0"></a>　<a href="http://alchemytechnology.no-ip.org:4050/BrainwaveClass/index/login.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','icon/login2.png',1)"><img src="icon/login.png" alt="" name="Image12" width="58" height="11" border="0"></a></span></td>
+        <td width="10">&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<table width="950" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+	    <td width="950"><table width="950" border="0" cellpadding="0" cellspacing="0">
+	      <tr>
+	        <td height="30">&nbsp;</td>
+	        <td>&nbsp;</td>
+          </tr>
+	      <tr>
+	        <td valign="middle"><a href="index.html"><img src="img/home/Logo-large.png" alt="" height="65" border="0" /></a></td>
+	        <td><table border="0" align="right" cellpadding="0" cellspacing="0">
+	          <tr>
+	            <td width="" height="15" valign="top"><ul id="menu">
+	              <li> <a href="#">最新資訊</a>
+	                <ul>
+	                  <li><a href="#">最新活動</a></li>
+	                  <li><a href="https://www.facebook.com/HarvestEDU" target="_new">最新趨勢</a></li>
+	                  </ul>
+	                <li><a href="#">關於我們</a>
+	                  <ul>
+	                    <li><a href="about.html">關於兆豐</a></li>
+	                    <li><a href="news/news.html">媒體報導</a></li>
+						<li><a href="#">活動照片</a></li>                    
+                      </ul>
+					</li>
+                    <li><a href="#">腦波教育</a>
+	                    <ul>
+	                      <li><a href="21_classroom.html">21天腦波雲端教室</a></li>
+	                      <li><a href="music.html">音樂療癒課程</a></li>
+	                      <li><a href="zenlamp.html">Zen Lamp 智慧生活放鬆燈</a></li>
+	                      <li><a href="braincube.html">BrainCubed 專精學習設計平台</a></li>
+						  <li><a href="pad_classroom.html">Pad 腦波學習系統</a></li>
+						  <li><a href="certificate.html">腦波教師證照</a></li>
+                      </ul>
+                    </li>
+					<li><a href="case.html">成功案例</a>
+	                  <ul>                  
+                      </ul>
+	              <li><a href="#">合作夥伴</a>
+				   <ul>
+	                      <li><a href="cooperation.html">院校產學合作</a></li>
+						   <li><a href="#">教育身心靈研習</a></li>
+                      </ul></li>
+	              <li><a href="download.html">軟體下載</a></li>
+	              <li><a href="#">加入我們</a>
+				   <ul>
+						  <li><a href="contact.html">聯絡我們</a></li>
+	                      <li><a href="recruited.html">誠聘英才</a></li>
+	                      <li><a href="#">問與答</a></li>	     
+                      </ul></li>
+                </ul></td>
+              </tr>
+            </table></td>
+          </tr>
+	      </table></td>
+  </tr>
+	  <tr>
+	    
+      </tr>
+	  <tr>
+	    <td><p>&nbsp;</p>
+        <p>&nbsp;</p></td>
+      </tr>
+</table>
+<table width="950" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr class="sidebar1">
+    <ul class="nav">
+      <li><a href="#">連結一</a></li>
+      <li><a href="#">連結二</a></li>
+      <li><a href="#">連結三</a></li>
+     <p>atesft</p>
+    </ul>
+    </tr>
+	<tr class="content"><p>
+	問與答
+
+	21天腦波雲端教室
+Q1.專注力訓練是什麼？
+A1.專注力訓練是指，利用經過精細設計的活動，以改善集中力和吸收力。
+   利用神經反饋方法進行專注力訓練，是指透過有意識的練習，
+   促使人們腦部產生與專注力相關的腦波，即一個人能經過訓練，
+   學習到控制他們的專注能力。
+
+Q2.放鬆度訓練是什麼？
+A2.放鬆度訓練是指，利用研究證實能使人原本緊繃的情緒逐漸放鬆的訓練，
+   例如深呼吸或轉移注意力，讓人慢慢掌握到自己的情緒，
+   能夠在高壓下放鬆且有效率地完成任務。
+
+Q3.誰可以使用21天腦波雲端教室？
+A3.主要是針對注意力不足的孩子，所製作的課程。
+但一般的孩子同樣也可以藉由21天腦波雲端教室，增強放鬆度與專注力。
+成年人也可以藉由21天腦波雲端教室，了解並調整自己的狀態，進而帶領孩子進入最佳狀態。
+
+Q4.如何改善孩子的專注力？
+A.首先，利用放鬆課程，讓使用者透過每次的練習，逐漸尋找到自己的放鬆與專注方式，慢慢地掌握到控制自我專注與放鬆的訣竅。
+再藉由遊戲訓練，讓使用者看見自己放鬆課程過後的成效，而去做課程調整。
+兩者並行之下，達到專注和放鬆的訓練效果。
+
+Q5.需要訓練多久才能看到成效？
+A5.孩子對於靜態的放鬆課程，注意力會較低，需要花較多的時間與耐心，讓孩子了解靜心的訣竅與好處。而透過遊戲訓練的好處是，孩子對於動態的遊戲有興趣，利用遊戲做為靜態課程的測驗與獎勵。
+而每個人的吸收程度不一，視人而定去做課程調整是最好的。
+
+Q6.如何看到使用後的紀錄和效果？
+A6.在孩子做放鬆課程的當下，Zen Lamp腦波放鬆燈會藉由腦波儀接收到孩子的腦波，即刻呈現出孩子當下的狀態，讓帶領者可以馬上知道，而去做更深的帶領。
+而在做遊戲訓練的當下，每過一個關卡便會有簡單的評語，讓帶領者了解孩子目前的狀態，進步或退步。
+在訓練的同時，電腦會將接收到的數據資料一併傳送到伺服器，
+帶領者可到官網的首頁做登錄，便能看到孩子的使用狀況，有專業的分析報表，具體且明瞭地呈現出來。
+Q7.使用Mindwave Mobile腦波儀安全嗎？ 
+A7.Mindwave Mobile是非侵入式的，它是從頭的外部獲取信息，不會損害人體組織。
+
+Q8.是否有經過測試和研究？它真的有效嗎？
+A8.利用遊戲結合生物反饋方法進行專注力訓練的研究，已達25年之久，成效顯著。現時美國太空總署NASA的飛行員、奧運會的運動原和臨床醫生全部都使用這項科技。Mindwave Mobile腦波儀採用相同的技術，並得到Neurosky神念科技、大寶科技、美國耶魯大學等各大名校與其他專家共同參與發展。
+
+Q9.是否可以取代藥物治療？有沒有副作用？
+A9.21天腦波雲端教室是一種非藥物的訓練方法，不會有副作用。
+
+
+	Pad腦波學習系統
+Q1.Pad腦波學習系統是什麼？
+A1.為21天腦波雲端教室的平板系統，使用輕鬆好攜帶的平板做課程訓練，不拘泥於有電腦的室內或家中，讓課程能不被時間和地點所拘束，隨時隨地都能學習。
+Q2.誰可以使用Pad腦波學習系統？
+A2.擁有內有安裝21天腦波雲端教室軟體的平板，即可使用。
+
+Q3.如何改善使用者的學習狀態？
+A3.首先，利用放鬆課程，讓使用者透過每次的練習，逐漸尋找到自己的放鬆與專注方式，慢慢地掌握到控制自我專注與放鬆的訣竅。
+再藉由遊戲訓練，讓使用者看見自己放鬆課程過後的成效，而去做課程調整。
+兩者並行之下，達到專注和放鬆的訓練效果。
+
+Q4.需要多久才能看到成效？
+A4.孩子對於靜態的放鬆課程，注意力會較低，需要花較多的時間與耐心，讓孩子了解靜心的訣竅與好處。而透過遊戲訓練的好處是，孩子對於動態的遊戲有興趣，利用遊戲做為靜態課程的測驗與獎勵。
+而每個人的吸收程度不一，視人而定去做課程調整是最好的。
+
+Q5.如何看到使用後的紀錄和效果？
+A5.在孩子做放鬆課程的當下，Zen Lamp腦波放鬆燈會藉由腦波儀接收到孩子的腦波，即刻呈現出孩子當下的狀態，讓帶領者可以馬上知道，而去做更深的帶領。
+而在做遊戲訓練的當下，每過一個關卡便會有簡單的評語，讓帶領者了解孩子目前的狀態，進步或退步。
+在訓練的同時，電腦會將接收到的數據資料一併傳送到伺服器，
+帶領者可到官網的首頁做登錄，便能看到孩子的使用狀況，有專業的分析報表，具體且明瞭地呈現出來。
+
+Q6.使用Mindwave Mobile腦波儀安全嗎？有沒有副作用？
+A6.Mindwave Mobile是非侵入式的，它是從頭的外部獲取信息，不會損害人體組織。
+
+Q7.是否有經過測試和研究？它真的有效嗎？
+A7.利用遊戲結合生物反饋方法進行專注力訓練的研究，已達25年之久，成效顯著。現時美國太空總署NASA的飛行員、奧運會的運動原和臨床醫生全部都使用這項科技。Mindwave Mobile腦波儀採用相同的技術，並得到NeuroSky神念科技、大寶科技、美國耶魯大學等各大名校與其他專家共同參與發展。
+
+Q8.是否可以取代藥物治療？
+A8.21天腦波雲端教室是一種非藥物式的訓練方法，長期使用會有良好的改善，不會有副作用。
+
+
+	音樂療癒課程
+Q1.音樂療癒是什麼？
+透過古典樂和引導語，釋放壓力和緊繃的情緒，改善脾氣，學會情緒管理。亦能活化腦波激發腦力，增加學習與工作效率，找回內在平衡、快樂。
+
+Q2.誰可以使用音樂療癒課程？
+各個年齡層皆可使用。
+
+Q3.如何改善使用者的狀態？
+藉由優美的古典樂曲和舒緩的引導語，帶領使用者慢慢進入放鬆狀態，想像自己身處一些無壓力的情境，讓使用者逐漸得到壓力釋放，不再感到精神緊繃。
+再透過Zen Lamp腦波放鬆燈，看見自己腦波的變化狀態，找到能讓自己放鬆的人事物，逐漸成為自己情緒的主人。
+
+Q4.需要多久才能看到成效？
+每個人的調整步調不同，視人而定增加使用頻率。
+
+Q5.使用Mindwave腦波儀安全嗎？有沒有副作用？
+Mindwave是非侵入式的，它是從頭的外部獲取信息，將信息傳遞到腦波放鬆燈，不會損害人體組織。
+
+Q6.是否有經過測試和研究？它真的有效嗎？
+音樂在古代時即被拿來做為治療心靈的方法，而現代的音樂療癒研究，亦證實音樂直接或間接地影響人的情緒、心靈和身體。
+
+
+	Zen Lamp智慧生活放鬆組合
+Q1.Zen Lamp智慧生活放鬆組合是什麼？
+使用者戴上MindWave腦波儀，偵測到腦波後傳遞到Zen Lamp腦波放鬆燈，顯示出使用者當下的腦波狀態，越偏紅色是緊繃，偏紫色則是放鬆。此組合主要是在訓練放鬆，若放鬆燈呈現紅色，使用者要調整自己的情緒，找到自己的放鬆方式，讓放鬆燈變成紫色。而出現紫色的使用者，也要找到自己的放鬆方式，讓紫色持續而不會任意改變。
+
+Q2.誰可以使用Zen Lamp智慧生活放鬆組合？
+各個年齡層皆可使用。
+
+Q3.如何改善使用者的狀態？
+透過Zen Lamp腦波放鬆燈，看見自己腦波的變化狀態，找到能讓自己放鬆的人事物，逐漸成為自己情緒的主人。
+
+Q4.需要多久才能看到成效？
+每個人的調整步調不同，視人而定去增加使用頻率。
+
+Q5.使用Mindwave腦波儀安全嗎？有沒有副作用？
+Mindwave是非侵入式的，它是從頭的外部獲取信息，將信息傳遞到腦波放鬆燈，不會損害人體組織。
+
+
+
+
+	BrainCubed專精學習設計平台
+Q1.BrainCubed專精學習設計平台是什麼？
+A1.BrainCubed是一套配合NeuroSky腦波耳機MindWave Mobile使用的線上測驗軟體。透過這套軟體可以讓使用者清楚知道在答題時的腦波資訊，藉由腦波資訊分析專注力及放鬆度，可以讓使用者及檢測人員了解，在答題過程中使用者較不足的部份，之後便可以針對此部份進行學習改善。
+
+Q2.誰可以使用BrainCubed專精學習設計平台？
+針對各個年齡層及功用設計題庫，置入系統中即可使用，因此不限年齡層皆可使用。
+
+Q3.如何改善使用者的學習狀態？
+A3.在這個平台上，使用者可以將各種類型的題目，如數學、中文、英文……等以選擇題的格式置入BrainCubed的資料庫中，在戴上Mindwave Mobile腦波儀進行測驗。測驗完畢隨即從成績報告中看見，使用者對每一測驗題型的腦波狀態，腦波顯示了使用者對每一題型與概念的了解度與熟悉度，記而針對不熟悉的題目加強複習，直到完全了解、熟悉為止。
+
+Q4.需要多久才能看到成效？
+這種以測驗結果所進行的引領式教學，它令使用者優先複習不熟悉步了解的題型與概念，不僅縮短了學習時間，也大為提升學習的效率。
+
+Q5.如何看到使用後的紀錄和效果？
+測驗完畢隨即從成績報告中看見，使用者對每一測驗題型的腦波狀態，腦波顯示了使用者對每一題型與概念的了解度與熟悉度，記而針對不熟悉的題目加強複習，直到完全了解、熟悉為止。
+
+Q6.使用Mindwave Mobile腦波儀安全嗎？有沒有副作用？
+Mindwave Mobile是非侵入式的，它是從頭的外部獲取信息，不會損害人體組織。
+
+Q7.是否有經過測試和研究？它真的有效嗎？
+2010年美國NeuroSky神念科技與大寶科技攜手合作，共同研發各種訓練「專注力」與「情緒控制」的軟體課程，架構一個不受時間、地點限制的學習平台，讓學習者可以利用這個平台進行有意義且有效的學習。
+
+
+
+	Brainwave Evaluation Report 腦波雲端評測系統
+Q1.腦波雲端評測系統是什麼？
+A1.不受環境限制的腦電波量測系統，並產生專業腦波報表，以利測試者利用，有益於做其他課程訓練。
+
+Q2.誰可以使用腦波雲端評測系統？
+A2. 各個年齡層皆可使用。
+
+Q3.如何看到使用後的紀錄和效果？
+在評測的同時，電腦會將接收到的數據資料一併傳送到伺服器，
+使用者可到官網的首頁做登錄，會出現專業的分析報表，具體且明瞭地將使用者的腦波狀況呈現出來。
+
+
+	腦波教師證照
+Q1.腦波教師證照是什麼？
+A1. 由美國神念科技NeuroSky與大寶科技、兆豐文創合作，舉辦「腦波教師研習課程」，一系列的儀器介紹、操作課程與身心靈培育課程，讓參與研習的老師們學會與自己相處，才能讓孩子得到更好的學習與照顧。
+
+Q2.如何才能得到腦波教師證照？
+通過研習課程考試的老師，都可拿到神念科技核發的「腦波教師研習證照」，將來可搭配腦波儀器自行創業，開發更多可能，幫助自己也幫助更多需要的人。
+
+
+	</p><tr>
+	<tr>
+    <td colspan="3"></td>
+  </tr>
+  <tr>
+    <td height="60" colspan="3" align="center" valign="middle">&nbsp;</td>
+  </tr>
+    <tr>
+    <td colspan="3" align="center" valign="middle"><span class="info">兆豐文創有限公司               / 404   台中市北區 博館路89號6樓之2                     / tel. 04-23292926                   / fax. 04-23922875 </td></tr>
+  <tr>
+  <td colspan="3" align="center" valign="middle"><a href="https://www.facebook.com/HarvestEDU" target="_new"><span class="info">FB：『腦波教室』https://www.facebook.com/HarvestEDU</span></a></td>
+  </tr>
+  <tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

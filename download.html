@@ -9,8 +9,7 @@
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-<title>兆豐文創 Alchem Alchemy Creation</title>
-
+<title>兆豐文創 Harvest Education</title>
 <style type="text/css">
 
 <!--
@@ -21,7 +20,7 @@ a:active {color:#ffffff}
 a:hover {color: #FC9
 }
 a:hover img{
- opacity: 100;
+ opacity: 0.55;
  filter:alpha(opacity=55); /* IE only */}
 -->
 
@@ -87,6 +86,8 @@ font-size:10pt; color:#666; #; font-family:Helvetica, Microsoft JhengHei, Apple 
 }
 .more {	font-style:oblique ;font-size:10pt; font-family: Georgia, "Times New Roman", Times, serif; line-height:18pt; color:#464141; font-weight:500; letter-spacing:1pt;
 }
+.info1 {font-size:10pt; color:#333; #; font-family:Helvetica,Microsoft JhengHei,Apple LiGothic, Arial,  sans-serif; line-height:12pt; letter-spacing:1px;
+}
 </style>
 <script type="text/javascript">
 $(function(){
@@ -136,6 +137,7 @@ function MM_swapImage() { //v3.0
 </script>
 <link rel="shortcut icon" href="icon/favicon.ico" >
 <link rel="Bookmark" href="icon/favicon.ico" type="image/x-icon" />
+<link href="layout.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body onLoad="MM_preloadImages('icon/home2.png','icon/login2.png')">
@@ -143,7 +145,7 @@ function MM_swapImage() { //v3.0
   <tr>
     <td width="100%" height="30" align="right" valign="middle" bgcolor="#EA5A2C" ><table border="0" cellspacing="0" cellpadding="0">
       <tr>
-        <td align="center" valign="middle"><span class="brown"><a href="file:///Macintosh HD/Users/macintosh/Desktop/Harvest Education 2/home2.html"></a><a href="index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','icon/home2.png',1)"><img src="icon/home.png" alt="" name="Image13" height="11" border="0"></a>　<a href="http://alchemytechnology.no-ip.org:4050/BrainwaveClass/index/login.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','icon/login2.png',1)"><img src="icon/login.png" alt="" name="Image12" width="58" height="11" border="0"></a></span></td>
+        <td align="center" valign="middle"><span class="brown"><a href="file:///Macintosh HD/Users/macintosh/Desktop/Harvest Education 2/home2.html"></a><a href="http://www.harvesteducation.cc/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','icon/home2.png',1)"><img src="icon/home.png" alt="" name="Image13" height="11" border="0"></a>　<a href="http://alchemytechnology.no-ip.org:4050/BrainwaveClass/index/login.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','icon/login2.png',1)"><img src="icon/login.png" alt="" name="Image12" width="58" height="11" border="0"></a></span></td>
         <td width="10">&nbsp;</td>
       </tr>
     </table></td>
@@ -151,14 +153,14 @@ function MM_swapImage() { //v3.0
 </table>
 <table width="950" border="0" align="center" cellpadding="0" cellspacing="0">
 <tr>
-	    <td><table width="950" border="0" cellpadding="0" cellspacing="0">
+	    <td width="950"><table width="950" border="0" cellpadding="0" cellspacing="0">
 	      <tr>
 	        <td height="30">&nbsp;</td>
 	        <td>&nbsp;</td>
           </tr>
 	      <tr>
-	        <td><a href="index.html"><img src="img/home/Logo-large.png" alt="" height="65" border="0" /></a></td>
-	        <td><table border="0" align="right" cellpadding="0" cellspacing="0">
+	        <td valign="middle"><a href="index.html"><img src="img/home/Logo-large.png" alt="" height="65" border="0" /></a></td>
+	       <td><table border="0" align="right" cellpadding="0" cellspacing="0">
 	          <tr>
 	            <td width="" height="15" valign="top"><ul id="menu">
 	              <li> <a href="#">最新資訊</a>
@@ -205,48 +207,56 @@ function MM_swapImage() { //v3.0
 	      </table></td>
   </tr>
 	  <tr>
-	    <td height="40">&nbsp;</td>
+	    
       </tr>
 	  <tr>
-	    <td width="950" height="350"><img src="img/home/maingraphic.jpg" width="950" height="350" border="1px"></td>
-      </tr>
-	  <tr>
-	    <td height="15">&nbsp;</td>
-      </tr>
-	  <tr>
-	    <td><table border="0" cellspacing="0" cellpadding="0">
-	      <tr align="center" class="more">
-	        <td align="left" valign="top">媒體報導</td>
-	        <td align="left" valign="top">&nbsp;</td>
-	        <td align="left" valign="top">最新活動</td>
-	        <td align="left" valign="top">&nbsp;</td>
-	        <td align="left" valign="top">活動照片</td>
-	        <td align="left" valign="top">&nbsp;</td>
-	        <td align="left" valign="top">相關知識</td>
-          </tr>
-	      <tr align="center">
-	        <td width="215" height="105" bgcolor=""><a href="http://www.harvesteducation.cc/news/news.html"><img src="img/news/news.jpg" width="215" height="105" border="0"></a></td>
-	        <td width="30" height="100">&nbsp;</td>
-	        <td width="200" height="100"><a href="seminar/musichealing.html" target="_new"><img src="img/home/events.jpg" width="215" height="105" border="0"></a></td>
-	        <td width="30" height="100">&nbsp;</td>
-	        <td width="200" height="100"><img src="img/home/education.jpg" width="215" height="105" border="0"></td>
-	        <td width="30" height="100">&nbsp;</td>
-	        <td width="200" height="100"><img src="img/home/service.jpg" width="215" height="105" border="0"></td>
-          </tr>
-	      </table></td>
-      </tr>
-	  <tr>
-	    <td height="30">&nbsp;</td>
-      </tr>
-	  <tr>
-	    <td align="center" class="info">兆豐文創有限公司               / 404   台中市北區 博館路89號6樓之2                     / tel. 04-23292926                   / fax. 04-23922875  </td>
-      </tr>
-	  <tr>
-	  <td align="center" class="info"><a href="https://www.facebook.com/HarvestEDU" target="_new"><span class="info">FB：『腦波教室』https://www.facebook.com/HarvestEDU</span></a></td>
-	  </tr>
-	  <tr>
-	  <td colspan="3">&nbsp;</td>
+	    <td><p><br>
+	    </p></td>
       </tr>
 </table>
+
+<table width="550" border="0" align="center" cellpadding="0" cellspacing="0" class="bordered">
+ <thead>
+    <tr>
+		<th width="100">更新日期</th>
+        <th>載點名稱</th>
+		<th width="55" align="CENTER">下載</th>
+    </tr>
+    </thead>
+    <tr> 
+		<td></td>
+        <td>Adobe flash player 官方載點</td>
+		<td align="center"><img src="img/Brainwave Education/download/download.jpg" alt="" width="30" height="30" border="0"></td>
+    </tr> 
+	<tr>    
+		<td></td>
+        <td>Adobe AIR 官方載點</td>
+		<td align="center"><img src="img/Brainwave Education/download/download.jpg" alt="" width="30" border="0" align="center" /></td>
+    </tr>
+	  <tr> 
+		<td></td>
+        <td>ThinkGear Connector </td>
+		<td align="center"><img src="img/Brainwave Education/download/download.jpg" alt="" width="30" border="0" align="center" /></td>
+    </tr> 
+	<tr>    
+		<td></td>
+        <td>21天腦波雲端教室－使用手冊</td>
+		<td align="center"><img src="img/Brainwave Education/download/download.jpg" alt="" width="30" border="0" align="center" /></td>
+    </tr>
+	
+</table>
+	<table width="950" border="0" align="center" cellpadding="0" cellspacing="0">
+ <tr>
+	    <td height="30">&nbsp;</td>
+      </tr>
+	    <tr>
+    <td colspan="3" align="center" valign="middle"><span class="info">兆豐文創有限公司               / 404   台中市北區 博館路89號6樓之2                     / tel. 04-23292926                   / fax. 04-23922875 </td></tr>
+  <tr>
+  <td colspan="3" align="center" valign="middle"><a href="https://www.facebook.com/HarvestEDU" target="_new"><span class="info">FB：『腦波教室』https://www.facebook.com/HarvestEDU</span></a></td>
+  </tr>
+	  <tr>
+	   <td colspan="3">&nbsp;</td>
+      </tr>
+	  </table>
 </body>
 </html>
